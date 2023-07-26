@@ -1,13 +1,6 @@
 'use strict';
 
-/*console.log(document.querySelector('.message').textContent);
-document.querySelector('.message').textContent = 'Correct number!';
 
-document.querySelector('.number').textContent = 13;
-document.querySelector('.score').textContent = 50;
-
-document.querySelector('.guess').value = 15;
-*/
 
 const secretNumber = Math.trunc(Math.random() * 15) + 1;
 let score = 20;
@@ -49,3 +42,7 @@ document.querySelector('.check').addEventListener('click', function () {
     
   }
 });
+
+document.querySelector('.again').addEventListener('click', function(){
+  window.location.reload();
+})
